@@ -1,9 +1,11 @@
+/* 기본 컨테이너 스타일 */
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 1136px;
   padding: 0;
 }
+/* 섹션별 스타일 */
 .home-section {
   width: calc(100% - 1rem);
   max-width: 1136px;
@@ -26,28 +28,31 @@
   position: relative;
   overflow: hidden;
 }
+/* 섹션 제목 스타일 */
 .home-section__tit {
   font-size: 1.1rem;
   font-weight: 700;
   padding: 1rem 0;
 }
+/* 이전 및 다음 슬라이드 버튼 공통 스타일 */
 .slide-prev, .slide-next {
   position: absolute;
-  top: 60%; /* 기존의 50%에서 변경 */
+  top: 60%;
   transform: translateY(-50%);
   background-color: #ddd;
   border: none;
   padding: 10px;
   cursor: pointer;
   z-index: 100;
-  border-radius: 50%;
+  border-radius: 50%; /* 원형 모양 */
   width: 40px;
   height: 40px;
 }
 
-.slide-prev { left: 10px; }
-.slide-next { right: 10px; }
+.slide-prev { left: 10px; } /* 이전 버튼 위치 */
+.slide-next { right: 10px; } /* 다음 버튼 위치 */
 
+/* 카테고리 항목들을 담는 컨테이너 스타일 */
 .home-category__contents {
   display: flex;
   flex-flow: row nowrap;
@@ -55,6 +60,7 @@
   overflow: hidden;
 }
 
+/* 개별 카테고리 항목 스타일 */
 .home-category__item__wrap {
   flex: 0 0 25%;
   min-width: 10%;
@@ -63,6 +69,7 @@
   width: 100%;
   height: 100%;
 }
+
 .home-category__item__wrap div a {
   display: flex;
   flex-flow: column nowrap;
@@ -77,6 +84,7 @@
   width: 80px;
   height: 80px;
 }
+
 
 .home-category__item__wrap a h4 {
   color: #424242;
