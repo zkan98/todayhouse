@@ -1,0 +1,28 @@
+
+.home-category__wrap {
+ display: flex;
+ flex-flow: column nowrap;
+ width: 100%;
+ cursor: pointer;
+ position: relative; /*추가한 부분* /
+ overflow: hidden; /*추가한 부분* /
+}
+
+/* 이전 및 다음 슬라이드 버튼 공통 스타일 추가한 클래스 */
+.slide-prev, .slide-next {
+ position: absolute;
+ top: 60%;
+ transform: translateY(-50%);
+ background-color: #ddd;
+ border: none;
+ padding: 10px;
+ cursor: pointer;
+ z-index: 100;
+ border-radius: 50%; /* 원형 모양 */
+ width: 40px;
+ height: 40px;
+}
+
+.slide-prev { left: 10px; } /* 이전 버튼 위치 */
+.slide-next { right: 10px; } /* 다음 버튼 위치 */
+
